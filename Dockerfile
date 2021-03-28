@@ -20,7 +20,5 @@ RUN pip3 install --upgrade -r requirements.txt
 COPY src/ /src/
 COPY entrypoint.sh entrypoint.sh
 RUN ls -la /src/*
-ARG wandb_key
-ENV WANDB_API_KEY=$wandb_key
 
 CMD ["sh", "entrypoint.sh"]
