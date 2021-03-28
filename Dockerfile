@@ -21,7 +21,6 @@ COPY src/ /src/
 COPY entrypoint.sh entrypoint.sh
 RUN ls -la /src/*
 ARG wandb_key
-RUN export WANDB_KEY=$wandb_key
+ENV WANDB_API_KEY=$wandb_key
 
-# Running Python Application
 CMD ["sh", "entrypoint.sh"]

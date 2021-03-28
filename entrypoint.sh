@@ -1,2 +1,1 @@
-echo "2
-$WANDB_KEY" | python3 /src/train.py
+python3 /src/train.py
