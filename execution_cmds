@@ -1,0 +1,1 @@
+sudo docker build --build-arg wandb_key=<API_KEY> -t qfeuilla/wandb_test:latest .
